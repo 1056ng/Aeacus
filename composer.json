@@ -1,0 +1,25 @@
+{
+    "name": "1056ng/aeacus",
+    "type": "library",
+    "description": "Phalcon JWT Authenticate Plugin.",
+    "keywords" : [
+      "phalcon",
+      "phalcon jwt"
+    ],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [{
+      "name": "Akihiro Tokoro",
+      "email": "korooooon@gmail.com",
+      "homepage": "http://1056ng.jp/"
+    }],
+    "require": {
+      "php": ">=7.1.0",
+        "firebase/php-jwt": "^5.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Aeacus\\": "src/Aeacus"
+      }
+    }
+}
