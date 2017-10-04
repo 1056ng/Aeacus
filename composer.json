@@ -1,7 +1,7 @@
 {
     "name": "1056ng/aeacus",
     "type": "library",
-    "description": "Phalcon JWT Authenticate Plugin.",
+    "description": "Phalcon JWT Authentication Plugin",
     "keywords" : [
       "phalcon",
       "phalcon jwt"
