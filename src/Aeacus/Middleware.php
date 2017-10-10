@@ -44,7 +44,9 @@ class Middleware extends \Phalcon\Mvc\User\Plugin {
     }
 
     try {
-      $di->setShared(ServiceKeys::decodedToken, \Firebase\JWT\JWT::decode($token, $publicKeys, [$this->encryptAlgorism]));
+      $decoded = \Firebase\JWT\JWT::decode($token, $publicKeys, [$this->encryptAlgorism]);
+      $decoded->token = $token;
+      $di->setShared(ServiceKeys::decodedToken, $decoded);
     } catch (\Exception $error) {
       throw new Exception('invalid token', ExceptionCodes::invalidToken);
     }
